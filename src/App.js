@@ -6,23 +6,14 @@ import {GlobalStyles} from "./styles/GlobalStyles";
 import {useDarkMode} from "./hooks/useDarkMode";
 import {Route, Routes} from "react-router-dom";
 import Page from "./components/Page";
+import Blog from "./components/Blog"
+import Home from "./assets/Home/Home.md"
+import Contact from "./assets/Contact/Contact.md"
+import Links from "./assets/Links/Links.md"
 
 function App() {
 
     const [theme, themeToggler] = useDarkMode();
-
-    const home = () => {
-        return <Page name="home"/>
-    }
-    const contact = () => {
-        return <Page name="contact"/>
-    }
-    const blog = () => {
-        return <Page name="blog"/>
-    }
-    const links = () => {
-        return <Page name="links"/>
-    }
 
     return (
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
@@ -31,10 +22,10 @@ function App() {
                 <div>
                     <Header/>
                     <Routes>
-                        <Route path="/" element={home()}/>
-                        <Route path="/contact" element={contact()}/>
-                        <Route path="/blog" element={blog()}/>
-                        <Route path="/links" element={links()}/>
+                        <Route path="/" element={<Page content={Home}/>}/>
+                        <Route path="/contact" element={<Page content={Contact}/>}/>
+                        <Route path="/blog" element={<Blog/>}/>
+                        <Route path="/links" element={<Page content={Links}/>}/>
                     </Routes>
                     <Footer themeToggler={themeToggler} activeTheme={theme}/>
                 </div>

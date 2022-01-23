@@ -6,7 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.30s linear;
-    text-align: center;
     display: flex;
     flex-direction: column;
     margin-right: 10%;
@@ -32,6 +31,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   .footer > span{
     margin: 3px;
+  }
+  .header {
+      text-align: center;
   }
   .header-navigation-links > span {
     margin: 8px;
