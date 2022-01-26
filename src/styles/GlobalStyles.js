@@ -8,8 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.30s linear;
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -44,5 +44,11 @@ export const GlobalStyles = createGlobalStyle`
   }
   .clickable {
     cursor: pointer;
+  }
+  .linksList {
+    list-style-type: none;
+  }
+  .linksList li {
+    margin: 40px;
   }
   `

@@ -8,9 +8,9 @@ const Header = () => {
             <div className="header-navigation-links">
                 {`{`}
                 <span><Link to="/">home</Link></span>
-                <span><Link to="/contact">contact</Link></span>
-                <span><Link to="/blog">blog</Link></span>
+                <span><Link to="/about">about</Link></span>
                 <span><Link to="/links">links</Link></span>
+                <span><Link to="/blog">blog</Link></span>
                 {`}`}
             </div>
             <br/>
