@@ -9,9 +9,10 @@ const Footer = (props) => {
     return (
         <div className="footer">
             <hr/>
-            <span>Maciej Umanski</span>
-            <span className="clickable" onClick={props.themeToggler}>{getOppositeThemeEmoji(props.activeTheme)}</span>
-            <span>{new Date().getFullYear()}</span>
+            <p><span>Maciej Umanski </span>
+                <span className="clickable"
+                      onClick={props.themeToggler}>{getOppositeThemeEmoji(props.activeTheme)}</span>
+                <span> {new Date().getFullYear()}</span></p>
         </div>
     )
 }

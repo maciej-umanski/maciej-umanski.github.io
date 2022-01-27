@@ -8,7 +8,6 @@ const Links = () => {
 
     return (
         <div>
-            <h1>Links:</h1>
             <ul className="linksList">
                 <li>
                     <h2>Email</h2>
@@ -16,7 +15,7 @@ const Links = () => {
                 </li>
                 <li>
                     <h2>Telegram</h2>
-                    <p>This is the fastest way to communicate with me: <a href={telegramInvite}>Get invite</a></p>
+                    <p>The fastest way to get in touch: <a href={telegramInvite}>Get invite</a></p>
                 </li>
                 <li>
                     <h2>Linkedin</h2>

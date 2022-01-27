@@ -38,6 +38,9 @@ export const GlobalStyles = createGlobalStyle`
   .header-navigation-links > span {
     margin: 8px;
   }
+  .navLinkActive {
+    font-weight: bold;
+  }
   .image {
     margin: 10px;
     width: 70%;
